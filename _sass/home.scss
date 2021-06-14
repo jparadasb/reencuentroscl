@@ -1,0 +1,57 @@
+:root {
+  --font-color: #696969;
+  --social-icon-color: #f47322;
+}
+.page-footer {
+  background-color: #f1ede1;
+	color: #696969;
+  padding: 1em 0;
+  .footer-item {
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
+  a {
+    text-decoration: none;
+    color: var(--font-color);
+  }
+  &__icon_box {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    font-size: 12px;
+    i {
+      color: #fff;
+    }
+    i + * {
+      color: var(--social-icon-color);
+    }
+  }
+  &__branding {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    i {
+      padding: 0 1em;
+    }
+  }
+  &__social_links {
+    ul {
+      list-style: none;
+      &.social-media-list {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: flex-end;
+        li {
+          padding: 0 0.2em;
+        }
+        a {
+          color: var(--social-icon-color);
+        }
+      }
+    }
+  }
+}

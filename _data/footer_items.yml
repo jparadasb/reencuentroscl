@@ -1,0 +1,16 @@
+- name: phone_number
+  text: +56 9 7139 6534
+  icon: fa-mobile-alt
+  type: phone
+- name: email
+  text: contacto@reencuentros.cl
+  icon: fa-envelope
+  type: mailto
+- name: address
+  text: Antonio Varas 175, of. 201, Providencia - Santiago
+  icon: fa-map-marked-alt
+  type: text
+- name: schedule
+  text: Lunes a Viernes de 9:00 a 21:00 hrs.
+  icon: fa-calendar-alt
+  type: text

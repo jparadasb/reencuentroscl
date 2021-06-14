@@ -1,0 +1,60 @@
+<footer class="page-footer font-small blue pt-4">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="page-footer__branding">
+          <img src="{{"assets/images/logo-transparent.png" | relative_path}}" alt="" width="100">
+          <i>
+          {{site.title}}
+          </i>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="page-footer__social_links">
+          {%- include social.html -%}
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      {%- for item in site.data.footer_items -%}
+      {% assign handle = item.type %}
+      {% case handle %}
+      {% when 'phone' %}
+      <div class="col-md-3 footer-item">
+        <div class="page-footer__icon_box">
+        <span class="fa-stack fa-2x">
+          <i class="fas fa-circle fa-stack-2x"></i>
+          <i class="fas {{item.icon}} fa-stack-1x fa-inverse"></i>
+        </span>
+          <a href="tel:{{item.text}}">
+            {{item.text}}
+          </a>
+        </div>
+      </div>
+      {% when 'mailto' %}
+      <div class="col-md-3 footer-item">
+        <div class="page-footer__icon_box">
+        <span class="fa-stack fa-2x">
+          <i class="fas fa-circle fa-stack-2x"></i>
+          <i class="fas {{item.icon}} fa-stack-1x fa-inverse"></i>
+        </span>
+          <a href="mailto:{{item.text}}">
+            {{item.text}}
+          </a>
+        </div>
+      </div>
+      {% else %}
+      <div class="col-md-3 footer-item">
+        <div class="page-footer__icon_box">
+                  <span class="fa-stack fa-2x">
+          <i class="fas fa-circle fa-stack-2x"></i>
+          <i class="fas {{item.icon}} fa-stack-1x fa-inverse"></i>
+        </span>
+          {{item.text}}
+        </div>
+      </div>
+      {% endcase %}
+      {%- endfor -%}
+    </div>
+  </div>
+</footer>
