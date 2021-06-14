@@ -3,9 +3,9 @@
     <div class="row">
       <div class="col-md-6">
         <div class="page-footer__branding">
-          <img src="{{"assets/images/logo-transparent.png" | relative_path}}" alt="" width="100">
+          <img src="{{'assets/images/logo-transparent.png' | relative_path}}" alt="logo" width="100">
           <i>
-          {{site.title}}
+            {{site.title}}
           </i>
         </div>
       </div>
@@ -22,10 +22,10 @@
       {% when 'phone' %}
       <div class="col-md-3 footer-item">
         <div class="page-footer__icon_box">
-        <span class="fa-stack fa-2x">
-          <i class="fas fa-circle fa-stack-2x"></i>
-          <i class="fas {{item.icon}} fa-stack-1x fa-inverse"></i>
-        </span>
+          <span class="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fas {{item.icon}} fa-stack-1x fa-inverse"></i>
+          </span>
           <a href="tel:{{item.text}}">
             {{item.text}}
           </a>
@@ -34,10 +34,10 @@
       {% when 'mailto' %}
       <div class="col-md-3 footer-item">
         <div class="page-footer__icon_box">
-        <span class="fa-stack fa-2x">
-          <i class="fas fa-circle fa-stack-2x"></i>
-          <i class="fas {{item.icon}} fa-stack-1x fa-inverse"></i>
-        </span>
+          <span class="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fas {{item.icon}} fa-stack-1x fa-inverse"></i>
+          </span>
           <a href="mailto:{{item.text}}">
             {{item.text}}
           </a>
@@ -46,10 +46,10 @@
       {% else %}
       <div class="col-md-3 footer-item">
         <div class="page-footer__icon_box">
-                  <span class="fa-stack fa-2x">
-          <i class="fas fa-circle fa-stack-2x"></i>
-          <i class="fas {{item.icon}} fa-stack-1x fa-inverse"></i>
-        </span>
+          <span class="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fas {{item.icon}} fa-stack-1x fa-inverse"></i>
+          </span>
           {{item.text}}
         </div>
       </div>
